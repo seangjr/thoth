@@ -11,6 +11,8 @@ Folder structure:
 ```
 src/
     components/
+            layout/
+                *.php
         *.html
         *.php
     pages/
@@ -28,3 +30,23 @@ src/
         routes/
         server.js
 ```
+
+## Project configuration
+
+Before developing Thoth, you need to run the following commands:
+`yarn install` or
+`npm install`
+
+I would highly recommend installing yarn for improved speeds of downloading packages.
+
+```
+npm i -g yarn
+```
+
+After the dependencies are installed, please create a `.env` file at the root directory. Enter the following details to your `.env` file as per the values pinned in the private discord channel.
+
+## Project development
+
+To start developing Thoth, you need to run these commands:
+
+`yarn start` or `npm run start` to start the development server. After that, you need to run `yarn build` or `npm build` to watch for CSS file updates, as we are using Tailwind CSS.

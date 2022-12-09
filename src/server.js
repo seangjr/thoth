@@ -9,7 +9,7 @@ const phpExpress = require("php-express")({
 app.engine("php", phpExpress.engine);
 app.set("view engine", "php");
 app.set("views", path.join(__dirname, "pages"));
-app.set(express.static(path.join(__dirname, "public"))); // Serve static files
+app.use(express.static(path.join(__dirname, "public"))); // Serve static files
 
 app.all(/.+\.php$/, phpExpress.router);
 
